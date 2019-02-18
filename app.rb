@@ -14,13 +14,9 @@ get '/another' do
 end
 
 get '/cat' do
-"<html>
-<head>
-</head>
-<body>
-<div>
-  <img style='border: 4px dashed red' src='http://bit.ly/1eze8aE'>
-</div>
-</body>
-</html>"
+  erb(:index)
+end
+
+get '/anotherhtml' do
+  erb(:anotherhtml)
 end
